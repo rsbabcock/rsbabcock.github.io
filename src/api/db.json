@@ -1,0 +1,95 @@
+{
+    "me": [
+        {
+            "id": 1,
+            "firstName": "Rachael",
+            "lastName": "Babcock",
+            "email": "rachael.s.babcock@gmail.com",
+            "number": "615-967-0606",
+            "gitHub": "https://github.com/rsbabcock",
+            "linkedIn": "www.linkedin.com/in/rachael-babcock"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": "Aloha",
+            "description": "A social media app for sharing news articles, tasks and events",
+            "url": "https://github.com/nss-capricious-finches/nutshell"
+        },
+        {
+            "id": 2,
+            "name": "Mad-Words",
+            "description": "A fun app for making silly sentences",
+            "url": "http://mad-words.s3-website.ca-central-1.amazonaws.com/"
+        },
+        {
+            "id": 3,
+            "name": "Intelligence Report",
+            "description": "A simple intelligence report on a fictional character",
+            "url": "https://github.com/nss-day-cohort-25/intelligence-report-acid-hedgehogs"
+        }
+    ],
+    "favorites": [
+        {
+            "frog": "The Desert Rain Frog",
+            "movie": [
+                "The Lord of the Rings",
+                "Wonder Woman"
+            ],
+            "tv": [
+                "Downton Abbey",
+                "The Expanse",
+                "The Tick"
+            ],
+            "books": [
+                "Sherlock Holmes",
+                "John Carter of Mars",
+                "Narnia"
+            ],
+            "pets": "Scout & Maya"
+        }
+    ],
+    "places": [
+        {
+            "name": "Nashville",
+            "image": "https://c1.staticflickr.com/8/7735/27492741871_b2ddc952f3_b.jpg"
+        },
+        {
+            "name": "Belize City",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Bliss_and_Radisson_-_Belize_City.jpg"
+        },
+        {
+            "name": "Toronto",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Toronto_Ontario.jpg"
+        },
+        {
+            "name": "Snells Beach, NZ",
+            "image": "https://c1.staticflickr.com/8/7570/16097337850_9613da5c75_b.jpg"
+        },
+        {
+            "name": "Auckland, NZ",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Auckland_Skyline_as_seen_from_Devonport_20100128_3.jpg"
+        },
+        {
+            "name": "Rotorua, NZ",
+            "image": "https://c1.staticflickr.com/3/2306/2280382074_cf9596c348_b.jpg"
+        },
+        {
+            "name": "Washington DC",
+            "image": "https://c1.staticflickr.com/9/8288/7662519762_b374d5dbc5_b.jpg"
+        },
+        {
+            "name": "Charleston",
+            "image": "https://c1.staticflickr.com/8/7433/9306214120_e62ac8825c_b.jpg"
+        },
+        {
+            "name": "Jerusalem, Israel",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Temple_Mount_%28Jerusalem%2C_2008%29_02.jpg"
+        },
+        {
+            "name": "Seattle",
+            "image": "https://c1.staticflickr.com/4/3209/3046028613_94696a5b90_b.jpg"
+        }
+    ]
+}
