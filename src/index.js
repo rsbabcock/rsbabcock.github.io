@@ -9,6 +9,7 @@ import NavBar from "./nav/navBar";
 import Home from './home/home';
 import ProjectList from './projects/ProjectList';
 import AboutList from './about/aboutList';
+import PlaceList from './places/placeList';
 
 
 ReactDOM.render((
@@ -18,6 +19,7 @@ ReactDOM.render((
             <Route exact path="/" component={Home} />
             <Route exact path="/projects/" component={ProjectList} />
             <Route exact path="/about/" component={AboutList} />
+            <Route exact path="/places/" component={PlaceList} />
         </div>
     </Router>
 ), document.querySelector("#root"))

@@ -91,5 +91,13 @@
             "name": "Seattle",
             "image": "https://c1.staticflickr.com/4/3209/3046028613_94696a5b90_b.jpg"
         }
+    ],
+    "contacts": [
+        {
+            "id": 1,
+            "firstName": "Candice",
+            "lastName": "Lamp",
+            "email": "candice@gmail.com"
+        }
     ]
 }

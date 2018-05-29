@@ -12,6 +12,7 @@ class NavBar extends Component {
                 <Link to="/">Home</Link>
                 <Link to="/projects">List of Projects</Link>
                 <Link to="/about">About Me</Link>
+                <Link to="/places">Visited Cities</Link>
             </nav>
             </div>
         );
