@@ -45,8 +45,8 @@ class Home extends Component {
                 {this.state.home.map(p => (
                     <div key={this.uniqueKey++} className="home">
                     <h1>{p.firstName} {p.lastName}</h1>
-                    <h3> Full-Stack Developer </h3>
-                    <h6>{p.email} | {p.number}</h6>
+                    <p>Full-Stack Developer</p>
+                    <p>{p.email} | {p.number}</p>
                     </div>
                 ))}
                 <div id="container">

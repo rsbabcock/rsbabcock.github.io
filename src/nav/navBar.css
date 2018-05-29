@@ -1,0 +1,34 @@
+/* font-family: 'Sacramento', cursive;
+font-family: 'Open Sans', sans-serif; */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background: gainsboro;
+    /* padding: 2%; */
+}
+
+.navBar h1 {
+    margin-left: 2%;
+    font-family: 'Sacramento', cursive;
+}
+.navBar a {
+    margin-left: 2%;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    padding: 2%;
+    text-decoration: none;
+
+}
+
+.navBar a:hover {
+    background: white;
+    text-decoration: none;
+}
+
+.navBar a:active {
+    background: white;
+    text-decoration: none;
+}

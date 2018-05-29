@@ -1,11 +1,20 @@
+/* font-family: 'Sacramento', cursive;
+font-family: 'Open Sans', sans-serif; */
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .home {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home h1 {
+    font-family: 'Sacramento', cursive;
+    
 }

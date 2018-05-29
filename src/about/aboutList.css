@@ -1,5 +1,11 @@
+/* font-family: 'Sacramento', cursive;
+font-family: 'Open Sans', sans-serif; */
 .AboutList {
     text-align: center;
+}
+.AboutList h3 {
+    font-size: 2.5em;
+    font-family: 'Sacramento', cursive;
 }
 .aboutContainer {
     display: flex;
@@ -12,12 +18,18 @@
 .aboutContainer > div {
     margin: 1%;
     padding: 3%;
-    width: 80%;
+    width: 50%;
     height: 20%;
     border: 2px solid white;
     border-image: linear-gradient(white, whiteSmoke) 3;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .aboutContainer > div:hover{
     background: gainsboro;
+}
+
+.aboutContainer h4 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
 }
