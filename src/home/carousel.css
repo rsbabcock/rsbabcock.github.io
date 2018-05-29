@@ -3,15 +3,17 @@
     flex-direction: row;
     justify-content: left;
     align-content: flex-start;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 500px;
     width: 600px;
-    overflow: auto; 
+    overflow: scroll; 
     padding: 10%;
+    /* padding-right: 15%; */
     /* margin: 10% 3%;  */
 }
 
 .imageContainer > div {
-    margin-right: 15%;
+    /* margin: 5%; */
+    margin-right: 25%;
     margin-left: 15%;
 }

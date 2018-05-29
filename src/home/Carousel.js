@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/carousel.css'
+import './carousel.css'
 import bootstrap from '../img/bootstrap.jpeg'
 import html from '../img/html5.png'
 import bulma from '../img/bulma.png'
@@ -55,7 +55,7 @@ class Carousel extends Component {
             <img width={300} height={300} alt="300x300" src={this.state.json} />
           </div>
           <div>
-            <img width={500} height={300} alt="300x300" src={this.state.react} />
+            <img width={450} height={350} alt="300x300" src={this.state.react} />
           </div>
         </div>
       </div>

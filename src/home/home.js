@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Carousel from './Carousel'
-import home from '../styles/home.css'
+import home from './home.css'
 // Your name
 // List of technologies you've learned so far
 
@@ -45,6 +45,7 @@ class Home extends Component {
                 {this.state.home.map(p => (
                     <div key={this.uniqueKey++} className="home">
                     <h1>{p.firstName} {p.lastName}</h1>
+                    <h3> Full-Stack Developer </h3>
                     <h6>{p.email} | {p.number}</h6>
                     </div>
                 ))}

@@ -1,16 +1,23 @@
-.projectList {
+.AboutList {
+    text-align: center;
+}
+.aboutContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
 }
 
-.project {
+.aboutContainer > div {
     margin: 1%;
     padding: 3%;
     width: 80%;
     height: 20%;
     border: 2px solid white;
     border-image: linear-gradient(white, whiteSmoke) 3;
+}
+
+.aboutContainer > div:hover{
+    background: gainsboro;
 }
