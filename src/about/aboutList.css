@@ -18,11 +18,12 @@ font-family: 'Open Sans', sans-serif; */
 .aboutContainer > div {
     margin: 1%;
     padding: 3%;
-    width: 50%;
+    width: 80%;
     height: 20%;
     border: 2px solid white;
     border-image: linear-gradient(white, whiteSmoke) 3;
     font-family: 'Open Sans', sans-serif;
+    text-align: left;
 }
 
 .aboutContainer > div:hover{
@@ -32,4 +33,13 @@ font-family: 'Open Sans', sans-serif; */
 .aboutContainer h4 {
     font-family: 'Sacramento', cursive;
     font-size: 2em;
+}
+
+.aboutContainer img {
+    width: 90%;
+    height: 80%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }

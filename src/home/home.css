@@ -10,8 +10,16 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .home {
-    text-align: center;
+    margin-top: 10%;
+    text-align: left;
     font-family: 'Open Sans', sans-serif;
+    /* margin: 10% 0; */
+    /* margin: 1%; */
+    padding: 3%;
+    width: 40%;
+    height: 20%;
+    border: 2px solid white;
+    border-image: linear-gradient(white, whiteSmoke) 3;
 }
 
 .home h1 {

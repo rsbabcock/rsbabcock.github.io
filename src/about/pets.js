@@ -11,7 +11,7 @@ class Pets extends Component {
             <article className="Pets">
                 <div>
                     <p> {this.props.pets} </p>
-                    <img src={scoutMaya} alt="my pets" width="500" height="400"/>
+                    <img src={scoutMaya} alt="my pets"/>
                 </div>
             </article>
         )
