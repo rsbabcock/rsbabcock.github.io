@@ -47,6 +47,9 @@ class Home extends Component {
                     <h1>{p.firstName} {p.lastName}</h1>
                     <p>Full-Stack Developer</p>
                     <p>{p.email} | {p.number}</p>
+                    <a href={p.linkedIn} target="_blank"> {p.linkedIn}</a>
+                    |
+                    <a href={p.gitHub}target="_blank"> {p.gitHub}</a>
                     </div>
                 ))}
                 <div id="container">
