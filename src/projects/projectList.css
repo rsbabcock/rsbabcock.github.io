@@ -8,6 +8,11 @@ font-family: 'Open Sans', sans-serif; */
     align-items: center;
 }
 
+.projectList h3 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+}
+
 .project {
     display: flex;
     justify-content: space-evenly;

@@ -13,12 +13,13 @@ nav {
 .navBar h1 {
     margin-left: 2%;
     font-family: 'Sacramento', cursive;
+    font-size: 3em;
 }
 .navBar a {
-    margin-left: 2%;
+    margin-left: 1%;
     font-family: 'Open Sans', sans-serif;
     color: gray;
-    padding: 2%;
+    padding: 1%;
     text-decoration: none;
 
 }
