@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Carousel from './Carousel'
+import home from '../styles/home.css'
 // Your name
 // List of technologies you've learned so far
 

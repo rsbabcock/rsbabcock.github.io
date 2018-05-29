@@ -29,36 +29,33 @@ class Carousel extends Component {
   render() {
     return (
       <div>
-        <div>
-          <h4> Technologies </h4>
-        </div>
         <div className="imageContainer">
           <div>
-            <img width={200} height={200} alt="200x200" src={this.state.js} />
+            <img width={300} height={300} alt="300x300" src={this.state.js} />
           </div>
           <div>
-            <img width={200} height={200} alt="200x200" src={this.state.html} />
+            <img width={350} height={300} alt="300x300" src={this.state.html} />
           </div>
           <div>
-            <img width={300} height={200} alt="200x200" src={this.state.jquery} />
+            <img width={500} height={300} alt="300x300" src={this.state.jquery} />
           </div>
           <div>
-            <img width={200} height={200} alt="200x200" src={this.state.grunt} />
+            <img width={250} height={300} alt="300x300" src={this.state.grunt} />
           </div>
           <div>
-            <img width={200} height={200} alt="200x200" src={this.state.css} />
+            <img width={300} height={300} alt="300x300" src={this.state.css} />
           </div>
           <div>
-            <img width={200} height={200} alt="200x200" src={this.state.bootstrap} />
+            <img width={300} height={300} alt="300x300" src={this.state.bootstrap} />
           </div>
           <div>
-            <img width={300} height={200} alt="200x200" src={this.state.bulma} />
+            <img width={500} height={300} alt="300x300" src={this.state.bulma} />
           </div>
           <div>
-            <img width={200} height={200} alt="200x200" src={this.state.json} />
+            <img width={300} height={300} alt="300x300" src={this.state.json} />
           </div>
           <div>
-            <img width={300} height={200} alt="200x200" src={this.state.react} />
+            <img width={500} height={300} alt="300x300" src={this.state.react} />
           </div>
         </div>
       </div>
