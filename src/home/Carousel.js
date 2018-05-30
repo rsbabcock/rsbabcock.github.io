@@ -37,7 +37,7 @@ class Carousel extends Component {
             <img width={350} height={300} alt="300x300" src={this.state.html} />
           </div>
           <div>
-            <img width={500} height={300} alt="300x300" src={this.state.jquery} />
+            <img width={700} height={300} alt="300x300" src={this.state.jquery} />
           </div>
           <div>
             <img width={250} height={300} alt="300x300" src={this.state.grunt} />
