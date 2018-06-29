@@ -1,21 +1,128 @@
 import React, { Component } from 'react'
-import './styles/App.css'
+import './App.css'
 import Home from './home/home';
 import NavBar from './nav/navBar';
+// images 
+import aws from './img/languages/aws.png'
+import bootstrap from './img/languages/bootstrap-stack.png'
+import camera from './img/languages/camera.svg'
+import codepen from './img/languages/codepen.svg'
+import css3 from './img/languages/css3-alt.svg'
+import finalcut from './img/languages/finalcut.png'
+import git from './img/languages/git-square.svg'
+import gitHub from './img/languages/github.svg'
+import grunt from './img/languages/grunt.svg'
+import html5 from './img/languages/html5.svg'
+import jquery from './img/languages/jquery-filled.png'
+import js from './img/languages/js-square.svg'
+import lightroom from './img/languages/lightroom.png'
+import npm from './img/languages/npm.svg'
+import ps from './img/languages/ps.png'
+import react from './img/languages/react.svg'
+import vscode from './img/languages/vscode.png'
 
 
-
+// other images
+// import linkedin from './img/languages/linkedin.svg'
+import readme from './img/languages/readme.svg'
 
 
 
 class App extends Component {
-
+  
   // Set initial state
   state = {
     me: [],
     projects: [],
     favorites: [],
-    places: []
+    places: [],
+    languages: [
+      {
+        title: "Vanilla Javascript",
+        alt: "Vanilla Javascript",
+        src: js
+      },
+      {
+        title: "CSS",
+        alt: "CSS",
+        src: css3
+      },
+      {
+        title: "git & Version Control",
+        alt: "git & Version Control",
+        src: git
+      },
+      {
+        title: "gitHub Cloud Version Control",
+        alt: "gitHub Cloud Version Control",
+        src: gitHub
+      },
+      {
+        title: "Grunt.js Tool",
+        alt: "Grunt.js Tool",
+        src: grunt
+      },
+      {
+        title: "html5 web",
+        alt: "html5 web",
+        src: html5
+      },
+      {
+        title: "jquery tool",
+        alt: "jquery tool",
+        src: jquery
+      },
+      {
+        title: "React.js Framework",
+        alt: "React.js Framework",
+        src: react
+      },
+      {
+        title: "Amazon Web Services",
+        alt: "Amazon Web Services",
+        src: aws
+      },
+      {
+        title: "Bootstrap Framework",
+        alt: "Bootstrap Framework",
+        src: bootstrap
+      },
+      {
+        title: "Photography Skills",
+        alt: "Photography Skills",
+        src: camera
+      },
+      {
+        title: "Codepen.io",
+        alt: "Codepen.io",
+        src: codepen
+      },
+      {
+        title: "Final Cut - novice",
+        alt: "Final Cut - novice",
+        src: finalcut
+      },
+      {
+        title: "Adobe Lightroom",
+        alt: "Adobe Lightroom",
+        src: lightroom
+      },
+      {
+        title: "Adobe Photoshop",
+        alt: "Adobe Photoshop",
+        src: ps
+      },
+      {
+        title: "Node Package Manager",
+        alt: "Node Package Manager",
+        src: npm
+      },
+      {
+        title: "VsCode Editor",
+        alt: "VsCode Editor",
+        src: vscode
+      }
+    ]
   }
   uniqueKey = 1
 
@@ -78,16 +185,17 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar/>
-        <Home me={this.state.me} 
-        projects={this.state.projects} 
-        favs={this.state.favorites} 
-        places={this.state.places}
-        key={this.uniqueKey++}/>
+        <NavBar />
+        <Home me={this.state.me}
+          projects={this.state.projects}
+          favs={this.state.favorites}
+          places={this.state.places}
+          key={this.uniqueKey++}
+          languages={this.state.languages} />
       </div>
     )
   }
 
 }
 
-    export default App
+export default App

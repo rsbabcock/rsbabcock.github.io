@@ -32,14 +32,14 @@ class Home extends Component {
                 style={{borderRadius : 50}}
                 >
                     <article>
-                        <Book/>
+                        <Book langs={this.props.languages} key={this.key}/>
                     </article >
                     <article  >
                         <Cover me={this.props.me} key={this.key} />
                     </article>
-                    <article>
+                    {/* <article>
                         <Me me={this.props.me} key={this.key}/>    
-                    </article>
+                    </article> */}
                     <article>
                         <h1><ProjectList projects={this.props.projects} key={this.key}/></h1>
                     </article>

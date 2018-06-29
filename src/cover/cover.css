@@ -1,4 +1,35 @@
-.cover__avatar {
-    height: 25%;
-    width: 25%;
+.cover_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100%;
 }
+.cover_container section {
+    width: 50%;
+    height: 90%;
+    text-align: center;
+    padding: 5%;
+    margin-top: 10%;
+}
+.cover_container >section {
+    margin: 1%;
+}
+
+.cover__avatar {
+    height: 30%;
+    width: 30%;
+}
+
+.cover_container img{
+    height: 30%;
+    width: 30%;
+    margin-top: 10%;
+}
+
+.links p{
+    margin-top: 20%;
+    font-size: 1.25em;
+}
+
+

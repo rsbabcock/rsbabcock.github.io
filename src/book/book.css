@@ -7,11 +7,35 @@
     height: 100%;
 }
 
-.Book :first-child {
-    border-right-style: linear-gradient
-}
+
 .Book div{
     width: 50%;
     height: 100%;
     text-align: center;
+    padding: 1%;
+}
+
+.book__avatar {
+    height: 75%;
+    width: 75%;
+}
+
+.lang__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+.lang__container img {
+    margin: 1%;
+    height: 18.5%;
+    width: 18.5%;
+}
+.notification {
+    align-self: unset;
+    display: unset;
+    margin-right: -20%;
+    margin-left: 10%;
+    margin-bottom: -15%;
 }
