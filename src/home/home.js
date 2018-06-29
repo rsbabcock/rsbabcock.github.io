@@ -22,12 +22,14 @@ class Home extends Component {
         return (
             <div className="flipContainer">
                 <FlipPage orientation="horizontal"
-                flipOnTouch
+                // flipOnTouch
                 showTouchHint
                 uncutPages
                 perspective="50em" 
                 animationDuration="600" 
                 width={this.state.width}
+                className="flip__book"
+                style={{borderRadius : 50}}
                 >
                     <article>
                         <Book/>

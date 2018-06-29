@@ -1,0 +1,17 @@
+
+.Book {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+.Book :first-child {
+    border-right-style: linear-gradient
+}
+.Book div{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}

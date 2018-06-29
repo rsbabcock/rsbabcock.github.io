@@ -2,12 +2,25 @@
     height: 25%;
     width: 25%;
 }
+.flip__book article{
+    /* border: 2px solid grey; */
+    height: 100%;
+}
+#FlipPage {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* .flip__book article {
+        border-right: 6px solid green;
+        height: 500px;
+        position: absolute;
+        right: 50%;
+        margin-left: -3px;
+        top: 0;
+} */
 
 .flipContainer {
-    padding: 2%;
-    background: peachpuff;
+    margin: 5%;
+    padding: 1%; 
+    box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.19), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
-#bookCover {
-    width: 50vw;
-}
