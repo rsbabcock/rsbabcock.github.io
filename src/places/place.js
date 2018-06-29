@@ -10,7 +10,7 @@ class Place extends Component {
             <div>
                 <div>
                 <h4> {this.props.name} </h4>
-                <img src={this.props.image} />
+                <img src={this.props.image} alt={this.props.name}/>
                 </div>
             </div>
         </article>

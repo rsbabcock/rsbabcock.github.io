@@ -6,36 +6,17 @@ import './placeList.css'
 
 class PlaceList extends Component {
 
-    constructor(props) {
-        super(props)
-        this.uniqueKey = 1
-    }
-
-    state = {
-        PlaceList: []
-    }
-
-    componentDidMount() {
-        fetch("http://localhost:8088/places")
-            .then(r => r.json())
-            .then(place => {
-                this.setState({
-                    PlaceList: place
-                })
-            })
-    }
-
     render() {
         return (
             <div className="placePage">
             <div>
-                <h3> Places I've Traveled </h3>
+                <h3> I love to travel! </h3>
             </div>
             <div className="PlaceList">
-                {this.state.PlaceList.map(currentPlace => (
+                {this.props.places.map(currentPlace => (
                     <div className="placeContainer">
-                        <div>
-                           <Place name={currentPlace.name} image={currentPlace.image} />
+                        <div >
+                           <Place name={currentPlace.name} image={currentPlace.image} key={this.props.key}/>
                         </div>
                     </div>
                 ))}

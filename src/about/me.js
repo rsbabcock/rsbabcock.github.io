@@ -8,9 +8,9 @@ class Me extends Component {
         return (
             <div className="Me">
                 <div>
-                <img src={avatar} id="avatar"/>
+                <img src={avatar} id="avatar" alt="avatar"/>
                      {this.props.me.map(me => (
-                         <div key={this.props.key}> 
+                         <div key={me.id++}> 
                           <h1> {me.firstName} {me.lastName}</h1>
                           <p> {me.bio} </p>
                           <p> {me.linkedIn} {me.gitHub} </p>

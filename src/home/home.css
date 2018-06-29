@@ -1,9 +1,13 @@
 #avatar {
-    height: 50%;
-    width: 50%;
+    height: 25%;
+    width: 25%;
 }
 
 .flipContainer {
     padding: 2%;
     background: peachpuff;
+}
+
+#bookCover {
+    width: 50vw;
 }

@@ -9,11 +9,12 @@ class Cover extends Component {
         return (
             <div className="Cover">
                 <div>
-                <img src={avatar} class="cover__avatar"/>
                      {this.props.me.map(me => (
-                         <div key={this.props.key}> 
+                         <div key={me.id}> 
+                         <p> Hi, I'm {me.firstName}
+                         <img src={avatar} className="cover__avatar" alt="avatar"/>
+                         </p>
                           <h1> {me.quote}</h1>
-                          
                           </div>
                      ))}
                     </div>
