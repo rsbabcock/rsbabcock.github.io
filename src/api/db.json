@@ -32,21 +32,6 @@
     ],
     "favorites": [
         {
-            "frog": "The Desert Rain Frog",
-            "movie": [
-                "The Lord of the Rings",
-                "Wonder Woman"
-            ],
-            "tv": [
-                "Downton Abbey",
-                "The Expanse",
-                "The Tick"
-            ],
-            "books": [
-                "Sherlock Holmes",
-                "John Carter of Mars",
-                "Narnia"
-            ],
             "pets": "Scout & Maya"
         }
     ],

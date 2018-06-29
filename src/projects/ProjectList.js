@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Project from './Project'
-import './projectList.css'
 
 
 class ProjectList extends Component {
