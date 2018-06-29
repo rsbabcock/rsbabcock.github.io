@@ -7,13 +7,7 @@ class NavBar extends Component {
     render() {
         return (
             <div className="navBar">
-                <h1> Rachael Babcock </h1>
-            <nav>
-                <Link to="/">Home</Link>
-                <Link to="/projects">List of Projects</Link>
-                <Link to="/about">About Me</Link>
-                <Link to="/places">Visited Cities</Link>
-            </nav>
+                <h6> rb | 615.967.0606 | rachael.s.babcock@gmail.com</h6>
             </div>
         );
     }

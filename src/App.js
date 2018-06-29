@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import './App.css'
-import NavBar from './nav/NavBar';
+import './styles/App.css'
+import Home from './home/home';
+import NavBar from './nav/navBar';
+
 
 
 
@@ -15,28 +17,8 @@ class App extends Component {
     favorites: [],
     places: []
   }
+  uniqueKey = 1
 
-
-
-  // Argument can be an event (via NavBar) or a string (via Login)
-  showView = function (e) {
-    let view = null
-
-    // Click event triggered switching view
-    if (e.hasOwnProperty("target")) {
-      view = e.target.id.split("__")[1]
-
-      // View switch manually triggered by passing in string
-    } else {
-      view = e
-    }
-    // Update state to correct view will be rendered
-    this.setState({
-      currentView: view,
-    })
-
-  }.bind(this)
-  // get annimals
   // function to get my info
   getMe = () => {
     fetch("http://localhost:8088/me")
@@ -91,35 +73,21 @@ class App extends Component {
   }
 
 
-  View = () => {
-    switch (this.state.currentView) {
-      case "gameScore":
-        return <GameScore score={this.state.userScore} activeUser={this.state.activeUser} counter={this.state.counter} showView={this.randomizeHandler} />
-      case "scoreList":
-        return <ScoreList activeUser={this.state.activeUser} />
-      case "welcome":
-        return <Welcome activeUser={this.state.activeUser} showView={this.showView} />
-      default:
-        return <Welcome activeUser={this.state.activeUser} showView={this.showView} />
-    }
+
+
+  render() {
+    return (
+      <div>
+        <NavBar/>
+        <Home me={this.state.me} 
+        projects={this.state.projects} 
+        favs={this.state.favorites} 
+        places={this.state.places}
+        key={this.uniqueKey++}/>
+      </div>
+    )
   }
+
 }
 
-render() {
-  return (
-    <article>
-      <NavBar viewHandler={this.showView}
-        activeUser={this.state.activeUser}
-        setActiveUser={this.setActiveUser}
-        randomizeHandler={this.state.randomizeHandler}
-      // profileHandler={this.viewProfile}
-      />
-
-      {this.View()}
-    </article>
-  )
-}
-}
-
-
-export default App
+    export default App

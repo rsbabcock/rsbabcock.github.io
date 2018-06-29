@@ -1,0 +1,9 @@
+#avatar {
+    height: 50%;
+    width: 50%;
+}
+
+.flipContainer {
+    padding: 2%;
+    background: peachpuff;
+}
