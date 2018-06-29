@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import FlipPage from "react-flip-page"
 import ProjectList from '../projects/ProjectList';
-import Me from '../about/me';
 import Cover from '../cover/cover';
 import PlaceList from '../places/placeList';
 import Favs from '../favs/favs';
