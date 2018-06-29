@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Project from './Project';
 
 
 class ProjectList extends Component {
@@ -8,7 +9,7 @@ class ProjectList extends Component {
         return (
             <div className="projectList">
                 <h3> Projects </h3>
-               
+                <Project/>
             </div>
         )
     }

@@ -25,9 +25,7 @@ class Home extends Component {
                         <Me me={this.props.me} key={this.props.key}/>    
                     </article>
                     <article>
-                        <h1><ProjectList/></h1>
-                        <h1>My excellent third article</h1>
-                        <p>My excellent third content</p>
+                        <h1><ProjectList projects={this.props.projects}/></h1>
                     </article>
                 </FlipPage>
             </div>
