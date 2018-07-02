@@ -21,7 +21,7 @@ class Home extends Component {
         return (
             <div className="flipContainer">
                 <FlipPage orientation="horizontal"
-                // flipOnTouch
+                flipOnTouch
                 showTouchHint
                 uncutPages
                 perspective="50em" 

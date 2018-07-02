@@ -24,7 +24,6 @@ import vscode from './img/languages/vscode.png'
 
 // other images
 // import linkedin from './img/languages/linkedin.svg'
-import readme from './img/languages/readme.svg'
 
 
 

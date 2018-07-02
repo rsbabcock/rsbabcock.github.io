@@ -16,7 +16,7 @@ class Cover extends Component {
                         <div key={me.id} className="cover_container">
                             <section>
                             <h1> Hi, I'm {me.firstName}</h1>
-                                <img src={avatar} className="cover__avatar" alt="avatar" />
+                                <img src={avatar} id="cover__avatar" alt="avatar" />
                             <h4> {me.quote}!</h4>
                                 <a href={me.linkedIn} target="_blank">
                                     <img  src={linkedin} alt={linkedin} />

@@ -14,10 +14,12 @@
     text-align: center;
     padding: 1%;
 }
-
+.first__page {
+    margin: 2%;
+}
 .book__avatar {
-    height: 75%;
-    width: 75%;
+    height: 65%;
+    width: 65%;
 }
 
 .lang__container {
@@ -29,13 +31,13 @@
 }
 .lang__container img {
     margin: 1%;
-    height: 18.5%;
-    width: 18.5%;
+    height: 15%;
+    width: 15%;
 }
 .notification {
     align-self: unset;
     display: unset;
-    margin-right: -20%;
+    margin-right: 1%;
     margin-left: 10%;
     margin-bottom: -15%;
 }
