@@ -39,9 +39,9 @@ class Home extends Component {
                     <article>
                         <h1><ProjectList projects={this.props.projects} key={this.key}/></h1>
                     </article>
-                    <article>
+                    {/* <article>
                         <h1><PlaceList places={this.props.places} key={this.key}/></h1>
-                    </article>
+                    </article> */}
                     <article>
                         <h1><Favs favs={this.props.favs} key={this.key}/></h1>
                     </article>

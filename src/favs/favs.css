@@ -1,0 +1,38 @@
+.favsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+.favs__title {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.favs__title img {
+    height: 35%;
+    width: 35%;
+    
+}
+ .favorites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* height: 100%; */
+}
+.Favs {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: .5em;
+}
+
+.Favs img{
+    height: 25%;
+    width: 25%;
+    border-radius: 35%;
+}

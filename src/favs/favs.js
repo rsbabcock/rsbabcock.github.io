@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
-
-// import './projectList.css'
+import pets from '../img/pets.jpg'
+import heart from '../img/heart.png'
+import pickles from '../img/pickles.png'
+import popcorn from '../img/popcorn.png'
+import './favs.css'
 
 
 class Favs extends Component {
@@ -8,14 +11,24 @@ class Favs extends Component {
     render() {
         return (
             <div className="favsContainer">
-            <div>
+            <div className="favs__title">
                 <h3> A few of my favourite things. . . </h3>
+                <img src={heart} alt="favourites" title="favourites" />
             </div>
             <div className="Favs">
                 {this.props.favs.map(favs => (
                     <div className="favorites" key={favs.id++}>
                         <div>
-                           {favs.pets}
+                           <p>{favs.pets}</p>
+                           <img src={pets} alt="Scout & Maya" title="Scout & Maya" />
+                        </div>
+                        <div>
+                            <p>Pickles</p>
+                            <img src={pickles} alt="Sweet Pickles" title="Sweet Pickles" />
+                        </div>
+                        <div>
+                            <p>Popcorn</p>
+                            <img src={popcorn} alt="Sweet Popcorn" title="Sweet Popcorn" />
                         </div>
                     </div>
                 ))}
