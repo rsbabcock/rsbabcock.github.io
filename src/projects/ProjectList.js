@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Project from './Project'
 import './projectList.css'
-
+import lightbulb from '../img/lightbulb.png'
 
 class ProjectList extends Component {
 
@@ -11,6 +11,7 @@ class ProjectList extends Component {
             <div className="projectList">
             <div className="first__page">
                 <h1> My Projects </h1>
+                <img src={lightbulb} alt="Lightbulb" title="Bright Ideas" />
             </div>
             <div className="second__page">
                 {this.props.projects.map(project => (

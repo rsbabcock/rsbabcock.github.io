@@ -8,19 +8,30 @@
 .first__page {
     height: 100%;
     width: 50%;
+    text-align: center;
+}
+.first__page img{
+    height: 35%;
+    width: 35%;
 }
 .second__page {
     height: 100%;
     width: 50%;
-    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+    font-size: 12px;
 }
 .project {
-    border: 2px solid black;
-    width: 85%;
-    height: 25%;
-    font-size: .5em;
-    margin: 2% 0%;
-    padding: 2%; 
+    /* border: 2px solid black; */
+    width: 265px;
+    height: 270px;
+    margin: 1% 1% 1% -3%;
+    padding: 3%;  
+    text-align: center;
 }
 
 #project__Geo-Zoo {
@@ -63,7 +74,11 @@
     background-image: url("../img/projectImages/mad-words.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 3% 35%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
 }
 #Mad-Words__2:hover {
     background-image: none;

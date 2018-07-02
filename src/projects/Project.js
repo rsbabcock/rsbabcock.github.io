@@ -11,7 +11,7 @@ class Project extends Component {
                 <div id={`project__${this.props.name}`}>
                 <p>{ this.props.name }</p>
                 <p>{ this.props.description }</p>
-                <a href={this.props.url} target="_blank">{this.props.url}</a>
+                <a href={this.props.url} target="_blank">Link</a>
                 </div>
             </article>
         )
