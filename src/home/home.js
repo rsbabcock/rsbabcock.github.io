@@ -36,9 +36,6 @@ class Home extends Component {
                     <article  >
                         <Cover me={this.props.me} key={this.key} />
                     </article>
-                    {/* <article>
-                        <Me me={this.props.me} key={this.key}/>    
-                    </article> */}
                     <article>
                         <h1><ProjectList projects={this.props.projects} key={this.key}/></h1>
                     </article>

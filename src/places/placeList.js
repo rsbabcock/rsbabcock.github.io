@@ -9,10 +9,10 @@ class PlaceList extends Component {
     render() {
         return (
             <div className="placePage">
-            <div>
+            <div className="first__place">
                 <h3> I love to travel! </h3>
             </div>
-            <div className="PlaceList">
+            <div className="second__place">
                 {this.props.places.map(currentPlace => (
                     <div className="placeContainer">
                         <div >

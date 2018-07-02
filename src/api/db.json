@@ -39,10 +39,6 @@
     ],
     "places": [
         {
-            "name": "Nashville",
-            "image": "https://c1.staticflickr.com/8/7735/27492741871_b2ddc952f3_b.jpg"
-        },
-        {
             "name": "Belize City",
             "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Bliss_and_Radisson_-_Belize_City.jpg"
         },
@@ -61,14 +57,6 @@
         {
             "name": "Rotorua, NZ",
             "image": "https://c1.staticflickr.com/3/2306/2280382074_cf9596c348_b.jpg"
-        },
-        {
-            "name": "Washington DC",
-            "image": "https://c1.staticflickr.com/9/8288/7662519762_b374d5dbc5_b.jpg"
-        },
-        {
-            "name": "Charleston",
-            "image": "https://c1.staticflickr.com/8/7433/9306214120_e62ac8825c_b.jpg"
         },
         {
             "name": "Jerusalem, Israel",

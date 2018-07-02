@@ -174,11 +174,9 @@ class App extends Component {
     this.getMe()
     this.getProjects()
     this.getFavorites()
-    // this.getPlaces()
+    this.getPlaces()
 
   }
-
-
 
 
   render() {

@@ -1,0 +1,37 @@
+.placePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+.first__place {
+    height: 5%;
+    /* width: 50%; */
+    text-align: center;
+    margin-top: -5%;
+}
+
+.second__place {
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2%;
+}
+
+.placeContainer {
+    width: 50%;
+    /* height: 50%; */
+    margin: -3%;
+    padding: -3%;
+    text-align: center;
+}
+.placeContainer img {
+    height: 80%;
+    width: 80%;
+    /* width: 150px; */
+}
