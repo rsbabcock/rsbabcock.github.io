@@ -1,0 +1,80 @@
+.projectList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+.first__page {
+    height: 100%;
+    width: 50%;
+}
+.second__page {
+    height: 100%;
+    width: 50%;
+    margin-top: 4%;
+}
+.project {
+    border: 2px solid black;
+    width: 85%;
+    height: 25%;
+    font-size: .5em;
+    margin: 2% 0%;
+    padding: 2%; 
+}
+
+#project__Geo-Zoo {
+    opacity: 0;
+}
+
+#project__Geo-Zoo:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+#project__Mad-Words {
+    opacity: 0;
+}
+
+#project__Mad-Words:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+#project__Aloha {
+    opacity: 0;
+}
+#project__Aloha:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+#Geo-Zoo__1 {
+    background-image: url("../img/projectImages/geo-zoo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Geo-Zoo__1:hover {
+    background-image: none;
+}
+
+#Mad-Words__2 {
+    background-image: url("../img/projectImages/mad-words.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Mad-Words__2:hover {
+    background-image: none;
+}
+
+#Aloha__3 {
+    background-image: url("../img/projectImages/aloha.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Aloha__3:hover {
+    background-image: none;
+}
