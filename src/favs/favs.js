@@ -4,6 +4,7 @@ import heart from '../img/heart.png'
 import pickles from '../img/pickles.png'
 import popcorn from '../img/popcorn.png'
 import './favs.css'
+import paws from '../img/paws.png'
 
 
 class Favs extends Component {
@@ -14,6 +15,7 @@ class Favs extends Component {
             <div className="favs__title">
                 <h1> A few of my favourite things. . . </h1>
                 <img src={heart} alt="favourites" title="favourites" />
+               <img src={paws} alt="paw prints" title="paw prints" id="paws2"/>
             </div>
             <div className="Favs">
                 {this.props.favs.map(favs => (

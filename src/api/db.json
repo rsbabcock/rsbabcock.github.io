@@ -28,7 +28,7 @@
             {
                 "id": 3,
                 "name": "Aloha",
-                "description": "A social media app for sharing news articles, tasks and events. Built with Grunt, Browserify, jQuery and Bulma",
+                "description": "A groupt project, Aloha is a social media app for sharing news articles, tasks and events. Built with Grunt, Browserify, jQuery and Bulma",
                 "url": "https://github.com/nss-capricious-finches/nutshell"
             }
     ],

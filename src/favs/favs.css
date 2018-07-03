@@ -1,3 +1,13 @@
+#paws2{
+    width: 50%;
+    height: 50%;
+    transform: rotate(60deg);
+    align-self: left;
+    margin-top: -10%;
+    /* margin-bottom: -10%; */
+    margin-left: -90%;
+    /* margin-right: 30%; */
+}
 .favsContainer {
     display: flex;
     flex-direction: row;
@@ -9,10 +19,15 @@
     width: 50%;
     height: 100%;
     text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .favs__title img {
     margin-top: 3%;
+    /* margin-left: -40%; */
     height: 45%;
     width: 45%;
     
