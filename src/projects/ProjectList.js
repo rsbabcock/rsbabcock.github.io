@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Project from './Project'
 import './projectList.css'
 import lightbulb from '../img/lightbulb.png'
+import paws from '../img/paws.png'
 
 class ProjectList extends Component {
 
@@ -14,6 +15,7 @@ class ProjectList extends Component {
                 <img src={lightbulb} alt="Lightbulb" title="Bright Ideas" />
             </div>
             <div className="second__page">
+            <img src={paws} alt="paw prints" title="paw prints" className="paws"/>
                 {this.props.projects.map(project => (
                     <div key={project.id}>
                     <Project name={project.name}

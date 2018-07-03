@@ -12,7 +12,7 @@ class Favs extends Component {
         return (
             <div className="favsContainer">
             <div className="favs__title">
-                <h3> A few of my favourite things. . . </h3>
+                <h1> A few of my favourite things. . . </h1>
                 <img src={heart} alt="favourites" title="favourites" />
             </div>
             <div className="Favs">

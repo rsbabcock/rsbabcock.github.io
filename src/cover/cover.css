@@ -10,7 +10,7 @@
     height: 90%;
     text-align: center;
     padding: 5%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .cover_container >section {
     margin: 1%;
@@ -30,6 +30,12 @@
 .links p{
     margin-top: 20%;
     font-size: 1.25em;
+}
+
+.links img {
+    width: 75%;
+    height: 30%;
+    margin-bottom: -40%;
 }
 
 

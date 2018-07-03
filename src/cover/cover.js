@@ -3,6 +3,7 @@ import avatar from '../img/myAvatar.svg'
 import './cover.css'
 import linkedin from '../img/languages/linkedin.svg'
 import gitHub from '../img/languages/github.svg'
+import paws from '../img/paws.png'
 
 
 
@@ -27,6 +28,7 @@ class Cover extends Component {
                             </section>
                             <section className="links">
                                 <p> {me.bio} </p>
+                                <img src={paws} alt="paw prints" title="paw prints" />
                             </section>
                           </div>
                             ))}

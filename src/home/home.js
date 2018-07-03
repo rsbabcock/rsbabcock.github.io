@@ -20,6 +20,8 @@ class Home extends Component {
         // debugger
         return (
             <div className="flipContainer">
+                <div className="flip__page1">
+                    <div className="flip__page2">
                 <FlipPage orientation="horizontal"
                 flipOnTouch
                 showTouchHint
@@ -46,6 +48,8 @@ class Home extends Component {
                         <h1><Favs favs={this.props.favs} key={this.key}/></h1>
                     </article>
                 </FlipPage>
+                    </div>
+                </div>
             </div>
         );
     }
