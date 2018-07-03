@@ -33,7 +33,7 @@ class Home extends Component {
                 style={{borderRadius : 50}}
                 >
                     <article>
-                        <Book langs={this.props.languages} key={this.key}/>
+                        <Book langs={this.props.languages} me={this.props.me} key={this.key}/>
                     </article >
                     <article  >
                         <Cover me={this.props.me} key={this.key} />

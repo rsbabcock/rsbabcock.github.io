@@ -7,15 +7,24 @@
     height: 100%;
 }
 
-
 .Book div{
     width: 50%;
     height: 100%;
     text-align: center;
     padding: 1%;
 }
+
 .first__page {
     margin: 2%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.first__page a>img{
+    height: 25%;
+    width: 25%;
+    margin-top: 10%;
 }
 .book__avatar {
     height: 65%;
