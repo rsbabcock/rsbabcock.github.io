@@ -1,3 +1,12 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Lobster', cursive;
+*/
+h1 {
+    font-family: 'Lobster', cursive;
+}
+p, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
 #avatar {
     height: 25%;
     width: 25%;

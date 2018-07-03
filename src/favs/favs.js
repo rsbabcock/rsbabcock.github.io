@@ -21,15 +21,15 @@ class Favs extends Component {
                 {this.props.favs.map(favs => (
                     <div className="favorites" key={favs.id++}>
                         <div>
-                           <p>{favs.pets}</p>
+                           <h1>{favs.pets}</h1>
                            <img src={pets} alt="Scout & Maya" title="Scout & Maya" />
                         </div>
                         <div>
-                            <p>Pickles</p>
+                            <h1>Pickles</h1>
                             <img src={pickles} alt="Sweet Pickles" title="Sweet Pickles" />
                         </div>
                         <div>
-                            <p>Popcorn</p>
+                            <h1>Popcorn</h1>
                             <img src={popcorn} alt="Sweet Popcorn" title="Sweet Popcorn" />
                         </div>
                     </div>
