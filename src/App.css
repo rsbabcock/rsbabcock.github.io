@@ -10,10 +10,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
 }
 
-h1 {
+/* body h1 {
     color: black;
-    /* -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent; */
-}
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+} */

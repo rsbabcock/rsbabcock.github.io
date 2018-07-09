@@ -20,6 +20,9 @@ import npm from './img/languages/npm.svg'
 import ps from './img/languages/ps.png'
 import react from './img/languages/react.svg'
 import vscode from './img/languages/vscode.png'
+import python from './img/languages/python.svg'
+import django from './img/languages/dj.png'
+
 
 
 // other images
@@ -120,6 +123,16 @@ class App extends Component {
         title: "VsCode Editor",
         alt: "VsCode Editor",
         src: vscode
+      },
+      {
+        title: "Python",
+        alt: "Python",
+        src: python
+      },
+      {
+        title: "Django Framework",
+        alt: "Django",
+        src: django
       }
     ]
   }

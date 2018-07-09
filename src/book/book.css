@@ -8,6 +8,14 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+    border-bottom-left-radius: 1%;
+}
+.first__page h1{
+    /* color: white; */
+    /* mix-blend-mode: screen; */
 }
 .first__page img{
     height: 25%;
@@ -21,6 +29,8 @@
 .languages {
     background-color: white;
     text-align: center;   
+    margin-top: 2%;
+    padding: 2%;
 }
 .lang__container {
     display: flex;
