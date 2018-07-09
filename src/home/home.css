@@ -2,7 +2,7 @@
     height: 25%;
     width: 25%;
 }
-h1 {
+h1, a {
     font-family: 'Lobster', cursive;
 }
 p, h2, h3, h4, h5, h6 {
@@ -15,4 +15,18 @@ p, h2, h3, h4, h5, h6 {
     justify-content: space-evenly;
     align-items: center;
     margin: 2%;
+}
+
+div{
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+    border-bottom-left-radius: 1%;
+}
+
+section{
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+    border-bottom-left-radius: 1%;
 }

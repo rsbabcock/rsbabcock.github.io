@@ -6,6 +6,7 @@
     padding: 2%;
     margin-top: 8%;
     margin-bottom: 8%;
+    background-color:rgba(255, 255, 255, .9);
 }
 
 
@@ -21,6 +22,7 @@
 
 .bio {
     background-color: white;
+    background-color:rgba(255, 255, 255, .9);
     padding: 5%;
     margin-top: 2%;
     margin-bottom: 8%;
