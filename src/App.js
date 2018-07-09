@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import Home from './home/home';
 import NavBar from './nav/navBar';
+
 // images 
 import aws from './img/languages/aws.png'
 import bootstrap from './img/languages/bootstrap-stack.png'
@@ -22,6 +23,7 @@ import react from './img/languages/react.svg'
 import vscode from './img/languages/vscode.png'
 import python from './img/languages/python.svg'
 import django from './img/languages/dj.png'
+import Footer from './nav/footer';
 
 
 
@@ -202,6 +204,7 @@ class App extends Component {
           places={this.state.places}
           key={this.uniqueKey++}
           languages={this.state.languages} />
+        <Footer />  
       </div>
     )
   }

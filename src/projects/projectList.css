@@ -34,10 +34,10 @@
     /* border: 2px solid black; */
     width: 265px;
     height: 270px;
-    margin: 2% 3% 2% 3%;
-    padding: 3%;  
+    margin: 2% 5% 2% 5%;
+    /* padding: 3%;   */
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.9em;
 }
 
 #project__Geo-Zoo {
@@ -47,6 +47,7 @@
 #project__Geo-Zoo:hover {
     visibility: visible;
     opacity: 1;
+    transition: .9s ease;
 }
 
 #project__Mad-Words {
@@ -56,6 +57,7 @@
 #project__Mad-Words:hover {
     visibility: visible;
     opacity: 1;
+    transition: .9s ease;
 }
 
 #project__Aloha {
@@ -64,6 +66,7 @@
 #project__Aloha:hover {
     visibility: visible;
     opacity: 1;
+    transition: .9s ease;
 }
 
 #Geo-Zoo__1 {
@@ -74,6 +77,8 @@
 }
 #Geo-Zoo__1:hover {
     background-image: none;
+    
+    /* transform: translate( ); */
 }
 
 #Mad-Words__2 {
