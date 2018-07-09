@@ -2,6 +2,12 @@
     height: 25%;
     width: 25%;
 }
+h1 {
+    font-family: 'Lobster', cursive;
+}
+p, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
 
 .page_container {
     display: flex;
