@@ -26,6 +26,7 @@ class Cover extends Component {
                                 </a>
                             </section>
                             <section className="bio">
+                                <h1> Bio </h1>
                                 <p> {me.bio} </p>
                             </section>
                           </div>

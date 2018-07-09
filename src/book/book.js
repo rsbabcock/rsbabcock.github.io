@@ -25,10 +25,13 @@ class Book extends Component {
                         </div>
                     ))}
                 </div>
+                <div className="languages">
+                    <h1> Skills </h1>
                 <div className="lang__container" id="skills">
                     {this.props.langs.map(lang => (
                         <img src={lang.src} key={this.uniqueKey++} alt={lang.alt} title={lang.title} />
                     ))}
+                </div>
                 </div>
             </div>
         )

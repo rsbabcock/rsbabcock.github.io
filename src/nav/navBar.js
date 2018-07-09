@@ -11,7 +11,7 @@ class NavBar extends Component {
                 </div>
                 <div className="group__nav">
                     <a href="#skills"> Skills </a>
-                    <a href="#projects"> Projects </a>
+                    <a href="#projects">  Projects </a>
                     <a href="#about"> About </a>
                 </div>
             </div>
