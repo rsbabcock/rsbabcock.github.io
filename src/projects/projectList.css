@@ -1,29 +1,28 @@
-.projectList {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    height: 100%;
-}
-.first__page {
-    height: 100%;
-    width: 50%;
+
+.project__page {
     text-align: center;
-}
-.first__page img{
-    height: 35%;
-    width: 35%;
-}
-.second__page {
-    height: 100%;
-    width: 50%;
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     padding: 2%;
+}
+.project__page img{
+    /* height: 35%; */
+    width: 40%;
+}
+.project__page__second {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+    margin-top:2%;
     font-size: 12px;
+    background-color: white;
 }
 .project {
     /* border: 2px solid black; */
@@ -92,13 +91,4 @@
 }
 #Aloha__3:hover {
     background-image: none;
-}
-
-.paws {
-    width: 65%;
-    height: 30%;
-    transform: rotate(-140deg);
-    margin-top: -20%;
-    margin-bottom: -10%;
-    margin-right: -50%;
 }

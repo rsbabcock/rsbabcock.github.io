@@ -1,3 +1,31 @@
 .navBar{
-    margin-left: 2%;
+    overflow: hidden;
+    background-color: rgba(88,88,88, .5);
+    color: white;
+    position:fixed;
+    width:100%;
+    height:40px;
+    margin-top: -2%;
+    padding-left: 3%;
+    padding-bottom: 2%;
+   
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.first__nav{
+    align-self: auto;
+    margin-left: -5%;
+    text-decoration: none;
+    color: white;
+}
+
+.group__nav{
+    text-decoration: none;
+    color: white;
+    
 }

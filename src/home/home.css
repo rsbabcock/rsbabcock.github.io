@@ -2,31 +2,11 @@
     height: 25%;
     width: 25%;
 }
-.flip__book article{
-    /* border: 2px solid grey; */
-    height: 100%;
-}
-.flip__page1 {
-    margin: 1%;
-    /* padding: 1%;  */
-    background:rgba(168,168,168, 0.9); 
-    box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.19), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-}
-.flip__page2 {
-    margin: 1%;
-    padding: 1%; 
-    background:rgba(168,168,168, 0.9); 
-    box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.19), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-}
 
-.flipContainer {
-    margin: 3%;
-    padding: 1%; 
-    background:rgba(128,128,128, .99 ); 
-    box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.19), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-    border-top-left-radius: 1%;
-    border-top-right-radius: 1%;
-    border-bottom-right-radius: 1%;
-    border-bottom-left-radius: 1%;
+.page_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
 }
-

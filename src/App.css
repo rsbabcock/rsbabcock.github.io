@@ -1,5 +1,13 @@
 body {
-    background: url("./img/puzzle.jpg");
-    background-size: cover;
+    background: url("./img/stars.jpg");
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }

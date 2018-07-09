@@ -1,41 +1,32 @@
-.cover_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    height: 90vh;
-}
-.cover_container section {
-    width: 50%;
-    height: 90%;
+
+.intro {
     text-align: center;
-    padding: 5%;
-    margin-top: 3%;
+    margin-top: 2%;
+    background-color: white;
+    padding: 2%;
 }
-.cover_container >section {
-    margin: 1%;
-}
+
 
 #cover__avatar {
     height: 35%;
     width: 35%;
 }
 
-.cover_container img{
+.intro img{
     height: 15%;
     width: 15%;
-    margin-left: 2%;
 }
 
-.links p{
-    margin-top: 20%;
-    font-size: 1.25em;
+.bio {
+    background-color: white;
+    padding: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-.links img {
+.bio img {
     width: 75%;
     height: 30%;
-    margin-bottom: -40%;
 }
 
 

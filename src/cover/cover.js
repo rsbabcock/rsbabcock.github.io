@@ -3,7 +3,6 @@ import avatar from '../img/myAvatar.svg'
 import './cover.css'
 import linkedin from '../img/languages/linkedin.svg'
 import gitHub from '../img/languages/github.svg'
-import paws from '../img/paws.png'
 
 
 
@@ -15,7 +14,7 @@ class Cover extends Component {
                 <div>
                     {this.props.me.map(me => (
                         <div key={me.id} className="cover_container">
-                            <section>
+                            <section className="intro" id="about">
                             <h1> Hi, I'm {me.firstName}</h1>
                                 <img src={avatar} id="cover__avatar" alt="avatar" />
                             <h4> {me.quote}!</h4>
@@ -26,9 +25,8 @@ class Cover extends Component {
                                     <img  src={gitHub} alt={gitHub} />
                                 </a>
                             </section>
-                            <section className="links">
+                            <section className="bio">
                                 <p> {me.bio} </p>
-                                <img src={paws} alt="paw prints" title="paw prints" />
                             </section>
                           </div>
                             ))}
