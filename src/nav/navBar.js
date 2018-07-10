@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./navBar.css"
+import star from '../img/star.svg'
 
 
 class NavBar extends Component {
@@ -7,7 +8,7 @@ class NavBar extends Component {
         return (
             <div className="navBar">
                 <div className="first__nav">
-                  <a href="#"> rb | 615.967.0606 | rachael.s.babcock@gmail.com</a>
+                <img src={star} alt="star" title="star"/><a href="#"> rb | 615.967.0606 | rachael.s.babcock@gmail.com</a>
                 </div>
                 <div className="group__nav">
                     <a href="#skills"> Skills </a>

@@ -24,12 +24,6 @@
                 "name": "Mad-Words",
                 "description": "A fun app for making silly sentences. Built with jQuery",
                 "url": "http://mad-words.s3-website.ca-central-1.amazonaws.com/"
-            },
-            {
-                "id": 3,
-                "name": "Aloha",
-                "description": "A groupt project, Aloha is a social media app for sharing news articles, tasks and events. Built with Grunt, Browserify, jQuery and Bulma",
-                "url": "https://github.com/nss-capricious-finches/nutshell"
             }
     ],
     "favorites": [

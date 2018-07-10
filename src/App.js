@@ -4,25 +4,26 @@ import Home from './home/home';
 import NavBar from './nav/navBar';
 
 // images 
-import aws from './img/languages/aws.png'
-import bootstrap from './img/languages/bootstrap-stack.png'
+import aws from './img/languages/aws.svg'
+import bootstrap from './img/languages/bootstrap-stack.svg'
 import camera from './img/languages/camera.svg'
 import codepen from './img/languages/codepen.svg'
-import css3 from './img/languages/css3-alt.svg'
+import css3 from './img/languages/css3-original.svg'
 import finalcut from './img/languages/finalcut.png'
 import git from './img/languages/git-square.svg'
 import gitHub from './img/languages/github.svg'
 import grunt from './img/languages/grunt.svg'
 import html5 from './img/languages/html5.svg'
-import jquery from './img/languages/jquery-filled.png'
+import jquery from './img/languages/jquery-filled.svg'
 import js from './img/languages/js-square.svg'
 import lightroom from './img/languages/lightroom.png'
 import npm from './img/languages/npm.svg'
-import ps from './img/languages/ps.png'
+import ps from './img/languages/ps.svg'
 import react from './img/languages/react.svg'
-import vscode from './img/languages/vscode.png'
+import vscode from './img/languages/vscode.svg'
 import python from './img/languages/python.svg'
-import django from './img/languages/dj.png'
+import django from './img/languages/django-line.svg'
+import heroku from './img/languages/heroku-original.svg'
 import Footer from './nav/footer';
 
 
@@ -125,6 +126,11 @@ class App extends Component {
         title: "VsCode Editor",
         alt: "VsCode Editor",
         src: vscode
+      },
+      {
+        title: "Heroku",
+        alt: "Heroku",
+        src: heroku
       },
       {
         title: "Python",

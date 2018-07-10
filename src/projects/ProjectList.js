@@ -9,11 +9,12 @@ class ProjectList extends Component {
     render() {
         return (
             <div>
+            <div id="projects"></div>
                 <div className="projectList">
                     <h1> My Projects
                 <img src={lightbulb} alt="Lightbulb" title="Bright Ideas" />
                     </h1>
-                    <div id="projects" className="project__page__second">
+                    <div className="project__page__second">
                         {this.props.projects.map(project => (
                             <div key={project.id}>
                                 <Project name={project.name}

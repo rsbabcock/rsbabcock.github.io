@@ -3,6 +3,7 @@ import './book.css'
 import avatar from '../img/myAvatar.svg'
 import linkedin from '../img/languages/linkedin.svg'
 import gitHub from '../img/languages/github.svg'
+import star from '../img/star.svg'
 
 
 class Book extends Component {
@@ -11,7 +12,8 @@ class Book extends Component {
         return (
             <div className="Book">
                 <div className="first__page">
-                    <h1> Rachael Babcock </h1>
+                    <h1><img src={star} alt="star" title="star"/>
+                     Rachael Babcock <img src={star} alt="star" title="star"/></h1>
                     <h2> Full Stack Developer </h2>
                     <img src={avatar} className="book__avatar" alt="avatar" />
                     {this.props.me.map(me => (
@@ -24,7 +26,8 @@ class Book extends Component {
                         </a>
                         </div>
                     ))}
-                </div>
+                    <div id="skills"></div>
+                </div >
                 <div className="languages">
                     <h1> Skills </h1>
                 <div className="lang__container" id="skills">

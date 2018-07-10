@@ -13,13 +13,14 @@
     border-bottom-right-radius: 1%;
     border-bottom-left-radius: 1%;
 }
-.first__page h1{
-    /* color: white; */
-    /* mix-blend-mode: screen; */
+.first__page h1>img{
+    height: 3%;
+    width: 3%;
 }
 .first__page img{
     height: 25%;
     width: 25%;
+    padding: 2%;
 }
 .git_links img{
     padding: 2%;
