@@ -2,13 +2,14 @@
 .Footer {
     overflow: hidden;
     background-color: rgba(88,88,88, .5);
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
     text-align: center;
     font-size: .6em;
+    padding-bottom: 2%;
 
     /* flex */
 }
