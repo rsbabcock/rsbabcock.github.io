@@ -8,8 +8,8 @@ class ProjectList extends Component {
 
     render() {
         return (
-            <div>
-            <div id="projects"></div>
+            <div id="projects">
+            <div></div>
                 <div className="projectList">
                     <h1> My Projects
                 <img src={lightbulb} alt="Lightbulb" title="Bright Ideas" />
