@@ -37,6 +37,7 @@ class App extends Component {
   
   // Set initial state
   state = {
+    // currentView: "",
     me: [],
     projects: [],
     favorites: [],
