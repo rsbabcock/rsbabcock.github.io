@@ -13,11 +13,11 @@ class NavBar extends Component {
         return (
             <div className="navBar">
                 <div className="first__nav">
-                    <a href="#"> rb | 615.967.0606 | rachael.s.babcock@gmail.com</a>
+                    <a href="#" id="page__book"> rb | 615.967.0606 | rachael.s.babcock@gmail.com</a>
                 </div>
                 <div className="group__nav">
-                    <a href="#skills"> Skills </a>
-                    <a href="#projects">  Projects </a>
+                    <a id="nav__skills" onClick={this.props.showView} href="#skills"> Skills </a>
+                    <a id="nav__projects" onClick={this.props.showView}>  Projects </a>
                     <a href="#about"> About </a>
                 </div>
                     <a className="print" href={resume} download={resume}><img src={print} alt="print icon" title="press to print" /></a>
