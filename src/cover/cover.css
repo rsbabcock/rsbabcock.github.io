@@ -4,29 +4,28 @@
     margin-top: 2%;
     background-color: white;
     padding: 2%;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 14%;
+    /* margin-bottom: 8%; */
     background-color:rgba(255, 255, 255, .9);
 }
 
 
 #cover__avatar {
-    height: 35%;
-    width: 35%;
+    height: 25%;
+    width: 25%;
 }
 
 .intro img{
-    height: 15%;
-    width: 15%;
+    height: 10%;
+    width: 10%;
     padding: 2%;
 }
 
 .bio {
     background-color: white;
     background-color:rgba(255, 255, 255, .9);
-    padding: 5%;
-    margin-top: 2%;
-    margin-bottom: 8%;
+    padding: 4%;
+    margin-top: 4%;
 }
 .bio h1{
     font-size: 1.5rem;

@@ -212,14 +212,14 @@ class App extends Component {
 
   View = () => {
     switch (this.state.currentView) {
-      case "cover":
+      case "about":
         return <Cover me={this.state.me} key={this.key} showView={this.showView} />
       case "skills":
         return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView}/>
       case "projects":
         return <ProjectList projects={this.state.projects} key={this.key} showView={this.showView}/>
       case "favs":
-        return <Favs favs={this.state.favs} key={this.key} showView={this.showView}/>
+        return <Favs favs={this.state.favorites} key={this.key} showView={this.showView}/>
       case "book":
         return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView}/>
       default:

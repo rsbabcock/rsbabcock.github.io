@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./navBar.css"
 import print from '../img/resume/resume.png'
-import resume from '../img/resume/RachaelBabcock.png'
+import resume from '../img/resume/RachaelBabcock.pdf'
 
 class NavBar extends Component {
 
@@ -13,14 +13,15 @@ class NavBar extends Component {
         return (
             <div className="navBar">
                 <div className="first__nav">
-                    <a href="#" id="page__book"> rb | 615.967.0606 | rachael.s.babcock@gmail.com</a>
+                    <a id="page__book" onClick={this.props.showView}> rb | 615.967.0606 | rachael.s.babcock@gmail.com</a>
                 </div>
                 <div className="group__nav">
                     <a id="nav__skills" onClick={this.props.showView} href="#skills"> Skills </a>
                     <a id="nav__projects" onClick={this.props.showView}>  Projects </a>
-                    <a href="#about"> About </a>
+                    <a id="nav__about" onClick={this.props.showView}> About </a>
+                    <a id="nav__favs" onClick={this.props.showView}> Favs </a>
                 </div>
-                    <a className="print" href={resume} download={resume}><img src={print} alt="print icon" title="press to print" /></a>
+                    <a className="print" href={resume} download="RachaelBabcock"><img src={print} alt="print icon" title="press to print" /></a>
             </div>
         );
     }
