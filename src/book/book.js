@@ -26,7 +26,7 @@ class Book extends Component {
                         <a href={me.linkedIn} target="_blank">
                             <img src={linkedin} alt={linkedin} />
                         </a>
-                        <a href="https://twitter.com/r_s_babcock" target="_blank">
+                        <a href={me.twitter} target="_blank">
                             <img src={twitter} alt={twitter} />
                         </a>
                         

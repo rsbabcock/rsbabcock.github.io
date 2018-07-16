@@ -1,4 +1,6 @@
-
+#nav__bar{
+    background-color:rgba(64, 64, 64, .9);
+}
 #navBar {
     height: 7%;
     width: 7%;
