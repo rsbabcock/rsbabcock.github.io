@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import './App.css'
-import Home from './home/home';
+// import Home from './home/home';
 import NavBar from './nav/navBar';
+import Cover from './cover/cover';
+import Book from './book/book'
+import Favs from './favs/favs'
+import ProjectList from './projects/ProjectList'
 
 // images 
 import aws from './img/languages/aws.svg'
@@ -34,9 +38,10 @@ import Footer from './nav/footer';
 
 
 class App extends Component {
-  
+
   // Set initial state
   state = {
+    currentView: "book",
     me: [],
     projects: [],
     favorites: [],
@@ -186,34 +191,64 @@ class App extends Component {
         })
       })
   }
+  showView = function (e) {
+    let view = null
 
-  // function to handle game play
+    // Click event triggered switching view
+    if (e.hasOwnProperty("target")) {
+      view = e.target.id.split("__")[1]
+
+      // View switch manually triggered by passing in string
+    } else {
+      view = e
+    }
+    // Update state to correct view will be rendered
+    this.setState({
+      currentView: view,
+    })
+
+  }.bind(this)
 
 
-  // Component that gets all animal and continent info
-  componentDidMount() {
-    this.getMe()
-    this.getProjects()
-    this.getFavorites()
-    this.getPlaces()
-
+  View = () => {
+    switch (this.state.currentView) {
+      case "about":
+        return <Cover me={this.state.me} key={this.key} showView={this.showView} />
+      case "skills":
+        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView}/>
+      case "projects":
+        return <ProjectList projects={this.state.projects} key={this.key} showView={this.showView}/>
+      case "favs":
+        return <Favs favs={this.state.favorites} key={this.key} showView={this.showView}/>
+      case "book":
+        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView}/>
+      default:
+        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView}/>
+    }
   }
 
 
-  render() {
-    return (
-      <div>
-        <NavBar />
-        <Home me={this.state.me}
-          projects={this.state.projects}
-          favs={this.state.favorites}
-          places={this.state.places}
-          key={this.uniqueKey++}
-          languages={this.state.languages} />
-        <Footer />  
+// Component that gets all animal and continent info
+componentDidMount() {
+  this.getMe()
+  this.getProjects()
+  this.getFavorites()
+  this.getPlaces()
+
+}
+
+
+render() {
+  return (
+    <div>
+      <NavBar showView={this.showView}/>
+      <div className="page_container">
+        {this.View()}
       </div>
-    )
-  }
+      <Footer />
+    </div>
+  )
+}
 
 }
 

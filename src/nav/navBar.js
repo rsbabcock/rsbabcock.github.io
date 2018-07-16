@@ -1,22 +1,41 @@
 import React, { Component } from "react";
 import "./navBar.css"
-import star from '../img/star.svg'
-
+// from bootstrap
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 class NavBar extends Component {
+
+    handlePrintPage = (e) => {
+        window.print()
+    }
+
     render() {
         return (
-            <div className="navBar">
-                <div className="first__nav">
-                <img src={star} alt="star" title="star"/><a href="#"> rb | 615.967.0606 | rachael.s.babcock@gmail.com</a>
-                </div>
-                <div className="group__nav">
-                    <a href="#skills"> Skills </a>
-                    <a href="#projects">  Projects </a>
-                    <a href="#about"> About </a>
-                </div>
-            </div>
-        );
+            <Navbar inverse collapseOnSelect>
+                <Navbar.Header>
+                    <Navbar.Brand>
+                        <a href="#brand" id="page__book" onClick={this.props.showView}> R . B</a>
+                    </Navbar.Brand>
+                    <Navbar.Toggle />
+                </Navbar.Header>
+                <Navbar.Collapse>
+                    <Nav className="navBar">
+                        <NavItem eventKey={1} href="#skills">
+                            <a id="nav__skills" onClick={this.props.showView}> Skills </a>
+                        </NavItem>
+                        <NavItem eventKey={2} href="#">
+                            <a id="nav__projects" onClick={this.props.showView}>  Projects </a>
+                        </NavItem>
+                        <NavItem eventKey={2} href="#">
+                            <a id="nav__about" onClick={this.props.showView}> About </a>
+                        </NavItem>
+                        <NavItem eventKey={2} href="#">
+                            <a id="nav__favs" onClick={this.props.showView}> Favorites </a>
+                        </NavItem>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        )
     }
 }
 

@@ -14,9 +14,35 @@ body {
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
 }
+#avatar {
+    height: 25%;
+    width: 25%;
+}
+h1, a {
+    font-family: 'Lobster', cursive;
+}
+p, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;
+}
 
-/* body h1 {
-    color: black;
-    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-} */
+.page_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+}
+
+div{
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+    border-bottom-left-radius: 1%;
+}
+
+section{
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+    border-bottom-left-radius: 1%;
+}

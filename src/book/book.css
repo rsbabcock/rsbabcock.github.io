@@ -12,6 +12,10 @@
     border-top-right-radius: 1%;
     border-bottom-right-radius: 1%;
     border-bottom-left-radius: 1%;
+    padding: 3%;
+}
+.first__page h1, h2{
+   margin: 2%;
 }
 .first__page h1>img{
     height: 3%;
@@ -22,17 +26,34 @@
     width: 25%;
     padding: 2%;
 }
+.git_links {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+}
+.git_links a{
+    text-decoration: none;
+    color: black
+}
+#stupidButton{
+    font-family: 'Lobster', cursive;
+    color: black
+}
 .git_links img{
-    padding: 2%;
-    height: 15%;
-    width: 15%;
+    /* padding: 2%; */
+    height: 50%;
+    width: 50%;
 }
 .languages {
     background-color: white;
     background-color:rgba(255, 255, 255, .9);
     text-align: center;   
     margin-top: 2%;
-    padding: 2%;
+    margin-bottom: 5%;
+    padding: 3%;
+}
+.languages h1 {
+    margin: 1%;
 }
 .lang__container {
     display: flex;
