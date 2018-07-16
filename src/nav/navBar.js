@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./navBar.css"
-import print from '../img/resume/resume.png'
-import resume from '../img/resume/RachaelBabcock.pdf'
+// from bootstrap
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 class NavBar extends Component {
 
@@ -11,19 +11,31 @@ class NavBar extends Component {
 
     render() {
         return (
-            <div className="navBar">
-                <div className="first__nav">
-                    <a id="page__book" onClick={this.props.showView}> rb | 615.967.0606 | rachael.s.babcock@gmail.com</a>
-                </div>
-                <div className="group__nav">
-                    <a id="nav__skills" onClick={this.props.showView} href="#skills"> Skills </a>
-                    <a id="nav__projects" onClick={this.props.showView}>  Projects </a>
-                    <a id="nav__about" onClick={this.props.showView}> About </a>
-                    <a id="nav__favs" onClick={this.props.showView}> Favs </a>
-                </div>
-                    <a className="print" href={resume} download="RachaelBabcock"><img src={print} alt="print icon" title="press to print" /></a>
-            </div>
-        );
+            <Navbar inverse collapseOnSelect>
+                <Navbar.Header>
+                    <Navbar.Brand>
+                        <a href="#brand" id="page__book" onClick={this.props.showView}> Rachael Babcock</a>
+                    </Navbar.Brand>
+                    <Navbar.Toggle />
+                </Navbar.Header>
+                <Navbar.Collapse>
+                    <Nav className="navBar">
+                        <NavItem eventKey={1} href="#">
+                            <a id="nav__skills" onClick={this.props.showView} href="#skills"> Skills </a>
+                        </NavItem>
+                        <NavItem eventKey={2} href="#">
+                            <a id="nav__projects" onClick={this.props.showView}>  Projects </a>
+                        </NavItem>
+                        <NavItem eventKey={2} href="#">
+                            <a id="nav__about" onClick={this.props.showView}> About </a>
+                        </NavItem>
+                        <NavItem eventKey={2} href="#">
+                            <a id="nav__favs" onClick={this.props.showView}> Favorites </a>
+                        </NavItem>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        )
     }
 }
 
