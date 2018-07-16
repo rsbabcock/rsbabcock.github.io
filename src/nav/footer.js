@@ -6,7 +6,7 @@ class Footer extends Component {
     render() {
         return (
             <div className="Footer">
-                <p> Built with <img src={heart} alt="love" /> & React  & FontAwesome by  &copy;Rachael Babcock</p>
+                <p> Built with <img src={heart} alt="love" /> & React & Bootstrap & FontAwesome by  &copy;Rachael Babcock</p>
             </div>
         );
     }

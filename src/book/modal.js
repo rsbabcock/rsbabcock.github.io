@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import {Modal, Button} from 'react-bootstrap'
+import phone from '../img/util/phone.svg'
+import email from '../img/util/email.svg'
+import close from '../img/util/window-close.svg'
+import './modal.css'
 
 class ContactModal extends Component {
     constructor(props, context) {
@@ -29,13 +33,17 @@ class ContactModal extends Component {
                     <a>Contact</a>
                 </Button>
 
-                <Modal show={this.state.show} onHide={this.handleClose}>
-                    <Modal.Body>
-                        <h4>rachael.s.babcock@gmail.com</h4>
-                        <h4> 615-967-0606 </h4>
+                <Modal show={this.state.show} onHide={this.handleClose} className="action">
+                    <Modal.Body className="action">
+                    <h4>
+                        <a href="tel:615-967-0606"><img src={phone} alt="phone" />615-967-0606</a>
+                    </h4>
+                    <h4>                       
+                        <a href="mailto:rachael.s.babcock@gmail.com"><img src={email} alt="email" />rachael.s.babcock@gmail.com</a>
+                    </h4>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button onClick={this.handleClose}>Close</Button>
+                        <img onClick={this.handleClose} src={close} alt="close"/>
                     </Modal.Footer>
                 </Modal>
             </div>

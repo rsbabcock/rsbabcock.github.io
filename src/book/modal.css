@@ -1,0 +1,10 @@
+
+.action img {
+    height: 5%;
+    width: 5%;
+    margin-right: 5%;
+}
+.action a {
+    text-decoration: none;
+    color: black;
+}

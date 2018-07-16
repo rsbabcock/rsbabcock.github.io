@@ -14,14 +14,14 @@ class NavBar extends Component {
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="#brand" id="page__book" onClick={this.props.showView}> Rachael Babcock</a>
+                        <a href="#brand" id="page__book" onClick={this.props.showView}> R . B</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav className="navBar">
-                        <NavItem eventKey={1} href="#">
-                            <a id="nav__skills" onClick={this.props.showView} href="#skills"> Skills </a>
+                        <NavItem eventKey={1} href="#skills">
+                            <a id="nav__skills" onClick={this.props.showView}> Skills </a>
                         </NavItem>
                         <NavItem eventKey={2} href="#">
                             <a id="nav__projects" onClick={this.props.showView}>  Projects </a>
