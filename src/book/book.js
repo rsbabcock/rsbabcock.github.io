@@ -38,8 +38,8 @@ class Book extends Component {
                         </a>
                         </div>
                     ))}
-                    <div id="skills"></div>
                 </div >
+                    <div id="skills"></div>
                 <div className="languages">
                     <h1> Skills </h1>
                 <div className="lang__container" id="skills">

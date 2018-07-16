@@ -10,23 +10,18 @@
     width: 5%;
     
 }
-.Favs {
+.favorites {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
     /* padding: 2%; */
 }
 
-.Favs p{
-    font-size: 1.5em;
-    font-weight: bolder;
-    /* margin: -.8%; */
-}
 
-.Favs img{
-    height: 35%;
-    width: 35%;
+.favorites img{
+    height: 25%;
+    width: 25%;
     border-radius: 35%;
 }

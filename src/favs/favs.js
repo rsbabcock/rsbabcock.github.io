@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import pets from '../img/pets.jpg'
 import heart from '../img/heart.png'
-import pickles from '../img/pickles.png'
-import popcorn from '../img/popcorn.png'
 import './favs.css'
 
 
@@ -18,16 +16,12 @@ class Favs extends Component {
                     {this.props.favs.map(favs => (
                         <div className="favorites" key={favs.id++}>
                             <div>
-                                <p>{favs.pets}</p>
+                                <h1>{favs.pets}</h1>
                                 <img src={pets} alt="Scout & Maya" title="Scout & Maya" />
                             </div>
                             <div>
-                                <p>Pickles</p>
-                                <img src={pickles} alt="Sweet Pickles" title="Sweet Pickles" />
-                            </div>
-                            <div>
-                                <p>Popcorn</p>
-                                <img src={popcorn} alt="Sweet Popcorn" title="Sweet Popcorn" />
+                                <h1>Blog</h1>
+                                <p>Coming Soon</p>
                             </div>
                         </div>
                     ))}

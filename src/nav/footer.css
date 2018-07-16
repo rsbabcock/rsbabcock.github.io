@@ -2,7 +2,7 @@
 .Footer {
     overflow: hidden;
     background-color: rgba(88,88,88, .5);
-    position: static;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
