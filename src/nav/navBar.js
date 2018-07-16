@@ -14,7 +14,7 @@ class NavBar extends Component {
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="#brand" id="page__book" onClick={this.props.showView}> R . B</a>
+                        <a href="#brand" id="page__book" onClick={this.props.showView}> &lt; RB &gt; </a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
