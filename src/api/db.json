@@ -32,36 +32,6 @@
             "pets": "Scout & Maya"
         }
     ],
-    "places": [
-        {
-            "name": "Belize City",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Bliss_and_Radisson_-_Belize_City.jpg"
-        },
-        {
-            "name": "Toronto",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Toronto_Ontario.jpg"
-        },
-        {
-            "name": "Snells Beach, NZ",
-            "image": "https://c1.staticflickr.com/8/7570/16097337850_9613da5c75_b.jpg"
-        },
-        {
-            "name": "Auckland, NZ",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Auckland_Skyline_as_seen_from_Devonport_20100128_3.jpg"
-        },
-        {
-            "name": "Rotorua, NZ",
-            "image": "https://c1.staticflickr.com/3/2306/2280382074_cf9596c348_b.jpg"
-        },
-        {
-            "name": "Jerusalem, Israel",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Temple_Mount_%28Jerusalem%2C_2008%29_02.jpg"
-        },
-        {
-            "name": "Seattle",
-            "image": "https://c1.staticflickr.com/4/3209/3046028613_94696a5b90_b.jpg"
-        }
-    ],
     "contacts": [
         {
             "id": 1,

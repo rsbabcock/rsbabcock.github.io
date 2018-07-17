@@ -28,6 +28,7 @@ import vscode from './img/languages/vscode.svg'
 import python from './img/languages/python.svg'
 import django from './img/languages/django-line.svg'
 import heroku from './img/languages/heroku-original.svg'
+import SQLite from './img/languages/Sqlite.svg'
 import Footer from './nav/footer';
 
 
@@ -146,6 +147,11 @@ class App extends Component {
         title: "Django Framework",
         alt: "Django",
         src: django
+      },
+      {
+        title: "SQLite",
+        alt: "SQLite",
+        src: SQLite
       }
     ]
   }
