@@ -172,7 +172,7 @@ class App extends Component {
 
   // function to get my info
   getMe = () => {
-    fetch("http://localhost:8088/me")
+    fetch("https://rsbabcock-site.herokuapp.com/me")
       .then(r => r.json())
       .then(me => {
         this.setState({
@@ -182,7 +182,7 @@ class App extends Component {
   }
   // function to get my projects
   getProjects = () => {
-    fetch("http://localhost:8088/projects")
+    fetch("https://rsbabcock-site.herokuapp.com/projects")
       .then(r => r.json())
       .then(projects => {
         this.setState({
@@ -192,7 +192,7 @@ class App extends Component {
   }
   // function to get my favorite things
   getFavorites = () => {
-    fetch("http://localhost:8088/favorites")
+    fetch("https://rsbabcock-site.herokuapp.com/favorites")
       .then(r => r.json())
       .then(favorites => {
         this.setState({
