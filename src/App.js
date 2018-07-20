@@ -28,8 +28,11 @@ import vscode from './img/languages/vscode.svg'
 import python from './img/languages/python.svg'
 import django from './img/languages/django-line.svg'
 import heroku from './img/languages/heroku-original.svg'
-import SQLite from './img/languages/Sqlite.svg'
-import Footer from './nav/footer';
+import sqlite from './img/languages/Sqlite-square-icon.png'
+import mdown from './img/languages/Markdown-mark.png'
+import djangoRest from './img/languages/django_rest.png'
+import Footer from './nav/footer'
+
 
 
 
@@ -149,9 +152,19 @@ class App extends Component {
         src: django
       },
       {
+        title: "Django Rest Framework",
+        alt: "Django Rest",
+        src: djangoRest
+      },
+      {
         title: "SQLite",
         alt: "SQLite",
-        src: SQLite
+        src: sqlite
+      },
+      {
+        title: "Markdown",
+        alt: "Mardown",
+        src: mdown
       }
     ]
   }
@@ -184,16 +197,6 @@ class App extends Component {
       .then(favorites => {
         this.setState({
           favorites: favorites
-        })
-      })
-  }
-  // function to get places I've visited
-  getPlaces = () => {
-    fetch("http://localhost:8088/places")
-      .then(r => r.json())
-      .then(places => {
-        this.setState({
-          places: places
         })
       })
   }
@@ -239,8 +242,6 @@ componentDidMount() {
   this.getMe()
   this.getProjects()
   this.getFavorites()
-  this.getPlaces()
-
 }
 
 

@@ -23,9 +23,13 @@
     background-color:rgba(255, 255, 255, .9);
     padding: 4%;
     margin-top: 2%;
+    margin-bottom: 4%;
 }
 .bio h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+.bio p{
+    font-size: 1.7rem;
 }
 
 .bio img {

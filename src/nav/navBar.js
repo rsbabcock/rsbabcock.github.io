@@ -21,16 +21,16 @@ class NavBar extends Component {
                 <Navbar.Collapse>
                     <Nav className="navBar">
                         <NavItem eventKey={1} href="#skills">
-                            <a id="nav__skills" onClick={this.props.showView}> Skills </a>
+                            <p id="nav__skills" onClick={this.props.showView}> Skills </p>
                         </NavItem>
                         <NavItem eventKey={2} href="#">
-                            <a id="nav__projects" onClick={this.props.showView}>  Projects </a>
+                            <p id="nav__projects" onClick={this.props.showView}>  Projects </p>
                         </NavItem>
                         <NavItem eventKey={2} href="#">
-                            <a id="nav__about" onClick={this.props.showView}> About </a>
+                            <p id="nav__about" onClick={this.props.showView}> About </p>
                         </NavItem>
                         <NavItem eventKey={2} href="#">
-                            <a id="nav__favs" onClick={this.props.showView}> Favorites </a>
+                            <p id="nav__favs" onClick={this.props.showView}> Favorites </p>
                         </NavItem>
                     </Nav>
                 </Navbar.Collapse>

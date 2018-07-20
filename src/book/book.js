@@ -21,7 +21,7 @@ class Book extends Component {
                     <h2> Full Stack Developer </h2>
                     <img src={avatar} className="book__avatar" alt="avatar" />
                     {this.props.me.map(me => (
-                        <div className="git_links">
+                        <div className="git_links" key={this.uniqueKey++}>
                         <ContactModal/>
                         <a href={me.linkedIn} target="_blank">
                             <img src={linkedin} alt={linkedin} />
@@ -34,7 +34,7 @@ class Book extends Component {
                             <img src={gitHub} alt={gitHub} />
                         </a>
                         <a href={resume} download="RachaelBabcock">
-                        <Button bsStyle="light" bsSize="small" id="stupidButton">Resume</Button> 
+                        <Button bsStyle="info" bsSize="small" id="stupidButton">Resume</Button> 
                         </a>
                         </div>
                     ))}

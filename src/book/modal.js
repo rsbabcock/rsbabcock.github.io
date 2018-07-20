@@ -29,7 +29,7 @@ class ContactModal extends Component {
 
         return (
             <div>
-                <Button bsStyle="light" bsSize="small" onClick={this.handleShow}>
+                <Button bsStyle="info" bsSize="small" onClick={this.handleShow}>
                     <a>Contact</a>
                 </Button>
 
