@@ -1,7 +1,8 @@
 
 .first__page {
     background-color:rgba(255, 255, 255, .9);
-    margin-bottom: 8%;
+    margin-bottom: 6%;
+    margin-top: 6%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -11,18 +12,18 @@
     border-top-right-radius: 1%;
     border-bottom-right-radius: 1%;
     border-bottom-left-radius: 1%;
-    padding: 3%;
+    padding: 2%;
 }
 .first__page h1, h2{
-   margin: 2%;
+   margin: 1%;
 }
 .first__page h1>img{
     height: 3%;
     width: 3%;
 }
 .first__page img{
-    height: 25%;
-    width: 25%;
+    height: 20%;
+    width: 20%;
     padding: 2%;
 }
 .git_links {
@@ -43,11 +44,13 @@
     height: 50%;
     width: 50%;
 }
+/* #skills {
+} */
 .languages {
     background-color: white;
     background-color:rgba(255, 255, 255, .9);
     text-align: center;   
-    margin-top: 2%;
+    margin-top: 4%;
     margin-bottom: 5%;
     padding: 3%;
 }
@@ -67,4 +70,23 @@
     margin: 1%;
     height: 10%;
     width: 10%;
+}
+
+@media screen and (max-width: 480px) {
+
+.first__page {
+    background-color:rgba(255, 255, 255, .9);
+    margin-bottom: 6%;
+    margin-top: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+    border-bottom-left-radius: 1%;
+    padding: 2%;
+}
 }

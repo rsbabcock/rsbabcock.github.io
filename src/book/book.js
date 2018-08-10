@@ -15,7 +15,7 @@ class Book extends Component {
     render() {
         return (
             <div className="Book">
-                <div className="first__page">
+                <div className="first__page" id="brand">
                     <h1><img src={star} alt="star" title="star"/>
                      Rachael Babcock <img src={star} alt="star" title="star"/></h1>
                     <h2> Full Stack Developer </h2>
@@ -38,8 +38,10 @@ class Book extends Component {
                         </a>
                         </div>
                     ))}
-                </div >
-                    <div id="skills"></div>
+                </div>
+                    <div id="skills">
+                    <br/>
+                    </div>
                 <div className="languages">
                     <h1> Skills </h1>
                 <div className="lang__container" id="skills">
