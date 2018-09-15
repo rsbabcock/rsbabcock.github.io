@@ -28,6 +28,9 @@
     justify-content: space-evenly;
     align-items: center;
 }
+.project__page__second article{
+    margin: 16px;
+}
 .project {
     /* border: 2px solid black; */
     width: 265px;
@@ -58,10 +61,10 @@
     transition: .9s ease;
 }
 
-#project__Aloha {
+#project__PetBook {
     opacity: 0;
 }
-#project__Aloha:hover {
+#project__PetBook:hover {
     visibility: visible;
     opacity: 1;
     transition: .9s ease;
@@ -95,13 +98,18 @@
     background-image: none;
 }
 
-#Aloha__3 {
-    background-image: url("../img/projectImages/aloha.png");
+#PetBook__3 {
+    background-image: url("../img/projectImages/PetBook.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+
 }
-#Aloha__3:hover {
+#PetBook__3:hover {
     background-image: none;
 }
 @media screen and (max-width: 480px) {
