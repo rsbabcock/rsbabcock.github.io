@@ -46,10 +46,44 @@ class App extends Component {
   // Set initial state
   state = {
     currentView: "book",
-    me: [],
-    projects: [],
-    favorites: [],
-    places: [],
+    me: [
+      {
+        firstName: "Rachael",
+        lastName: "Babcock",
+        email: "rachael.s.babcock@gmail.com",
+        number: "615-967-0606",
+        gitHub: "https://github.com/rsbabcock",
+        linkedIn: "https://www.linkedin.com/in/rachael-babcock",
+        twitter: "https://twitter.com/r_s_babcock",
+        bio: " A former Animation Producer turned Software Developer, development is where my need to create and passion for solving problems meet. Passionate about fun design and delivering clear, readable and efficient code. In my career, I seek to not only become an excellent developer but an excellent person. As an apprentice Developer and nearly graduated student of NSS, I know Software Development is my calling. There is nothing more thrilling than writing a line of code and seeing it come alive on the browser, or tackling a challenge and getting it to work. Also, I've climbed Mount Doom...",
+        quote: "I love to code, and I'd love to work with you"
+      }
+    ],
+    projects: [
+      {
+        "id": 1,
+        "name": "Geo-Zoo",
+        "description": "An educational app about endangered animals and the continents they live in. Built with React & Bloomer",
+        "url": "http://geo-zoo.s3-website.us-east-2.amazonaws.com/"
+      },
+      {
+        "id": 2,
+        "name": "Mad-Words",
+        "description": "A fun app for making silly sentences. Built with jQuery",
+        "url": "http://mad-words.s3-website.ca-central-1.amazonaws.com/"
+      },
+      {
+        "id": 3,
+        "name": "PetBook",
+        "description": "A social app for pet owners to share pet quirks, allergies and commands with other sitters and friends",
+        "url": "https://www.youtube.com/watch?v=S16lQEl88QE&feature=youtu.be"
+      }
+    ],
+    favorites: [
+      {
+        "pets": "Scout & Maya"
+      }
+    ],
     languages: [
       {
         title: "Vanilla Javascript",
@@ -170,36 +204,6 @@ class App extends Component {
   }
   uniqueKey = 1
 
-  // function to get my info
-  getMe = () => {
-    fetch("https://rsbabcock-site.herokuapp.com/me")
-      .then(r => r.json())
-      .then(me => {
-        this.setState({
-          me: me
-        })
-      })
-  }
-  // function to get my projects
-  getProjects = () => {
-    fetch("https://rsbabcock-site.herokuapp.com/projects")
-      .then(r => r.json())
-      .then(projects => {
-        this.setState({
-          projects: projects
-        })
-      })
-  }
-  // function to get my favorite things
-  getFavorites = () => {
-    fetch("https://rsbabcock-site.herokuapp.com/favorites")
-      .then(r => r.json())
-      .then(favorites => {
-        this.setState({
-          favorites: favorites
-        })
-      })
-  }
   showView = function (e) {
     let view = null
 
@@ -224,38 +228,30 @@ class App extends Component {
       case "about":
         return <Cover me={this.state.me} key={this.key} showView={this.showView} />
       case "skills":
-        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView}/>
+        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
       case "projects":
-        return <ProjectList projects={this.state.projects} key={this.key} showView={this.showView}/>
+        return <ProjectList projects={this.state.projects} key={this.key} showView={this.showView} />
       case "favs":
-        return <Favs favs={this.state.favorites} key={this.key} showView={this.showView}/>
+        return <Favs favs={this.state.favorites} key={this.key} showView={this.showView} />
       case "book":
-        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView}/>
+        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
       default:
-        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView}/>
+        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
     }
   }
 
 
-// Component that gets all animal and continent info
-componentDidMount() {
-  this.getMe()
-  this.getProjects()
-  this.getFavorites()
-}
-
-
-render() {
-  return (
-    <div>
-      <NavBar showView={this.showView}/>
-      <div className="page_container">
-        {this.View()}
+  render() {
+    return (
+      <div>
+        <NavBar showView={this.showView} />
+        <div className="page_container">
+          {this.View()}
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  )
-}
+    )
+  }
 
 }
 
