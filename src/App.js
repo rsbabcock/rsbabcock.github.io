@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import './App.css'
 // import Home from './home/home';
 import NavBar from './nav/navBar';
-import Cover from './cover/cover';
-import Book from './book/book'
-import Favs from './favs/favs'
+import About from './about/about';
+import Home from './home/home'
+// import Favs from './favs/favs'
 import ProjectList from './projects/ProjectList'
 
 // images 
@@ -31,7 +31,12 @@ import heroku from './img/languages/heroku-original.svg'
 import sqlite from './img/languages/Sqlite-square-icon.png'
 import mdown from './img/languages/Markdown-mark.png'
 import djangoRest from './img/languages/django_rest.png'
+import apigee from './img/languages/apigee.png'
+import sass from './img/languages/sass-original.svg'
+import node from './img/languages/nodejs-original-wordmark.svg'
+import redux from './img/languages/redux.png'
 import Footer from './nav/footer'
+import GraphicDesign from './graphicDesign/graphicDesign';
 
 
 
@@ -199,7 +204,27 @@ class App extends Component {
         title: "Markdown",
         alt: "Mardown",
         src: mdown
-      }
+      },
+      {
+        title: "Apigee",
+        alt: "Apigee",
+        src: apigee
+      },
+      {
+        title: "Sass",
+        alt: "Sass",
+        src: sass
+      },
+      {
+        title: "Node",
+        alt: "Node",
+        src: node
+      },
+      {
+        title: "Redux",
+        alt: "Redux",
+        src: redux
+      },
     ]
   }
   uniqueKey = 1
@@ -226,17 +251,19 @@ class App extends Component {
   View = () => {
     switch (this.state.currentView) {
       case "about":
-        return <Cover me={this.state.me} key={this.key} showView={this.showView} />
+        return <About me={this.state.me} key={this.key} showView={this.showView} />
       case "skills":
-        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
+        return <Home langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
       case "projects":
         return <ProjectList projects={this.state.projects} key={this.key} showView={this.showView} />
-      case "favs":
-        return <Favs favs={this.state.favorites} key={this.key} showView={this.showView} />
+      // case "favs":
+      //   return <Favs favs={this.state.favorites} key={this.key} showView={this.showView} />
+      case "graphicDesign":
+        return <GraphicDesign showView={this.showView}/>
       case "book":
-        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
+        return <Home langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
       default:
-        return <Book langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
+        return <Home langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
     }
   }
 

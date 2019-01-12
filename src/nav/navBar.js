@@ -28,8 +28,11 @@ class NavBar extends Component {
                         <NavItem eventKey={2} href="#">
                             <p id="nav__about" onClick={this.props.showView}> About </p>
                         </NavItem>
-                        <NavItem eventKey={2} href="#">
+                        {/* <NavItem eventKey={2} href="#">
                             <p id="nav__favs" onClick={this.props.showView}> Favorites </p>
+                        </NavItem> */}
+                        <NavItem eventKey={2} href="#">
+                            <p id="nav__graphicDesign" onClick={this.props.showView}> Graphic Design Work </p>
                         </NavItem>
                     </Nav>
                 </Navbar.Collapse>
