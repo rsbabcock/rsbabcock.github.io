@@ -64,31 +64,11 @@ class App extends Component {
         quote: "I love to code, and I'd love to work with you"
       }
     ],
-    projects: [
-      {
-        "id": 1,
-        "name": "Geo-Zoo",
-        "description": "An educational app about endangered animals and the continents they live in. Built with React & Bloomer",
-        "url": "http://geo-zoo.s3-website.us-east-2.amazonaws.com/"
-      },
-      {
-        "id": 2,
-        "name": "Mad-Words",
-        "description": "A fun app for making silly sentences. Built with jQuery",
-        "url": "http://mad-words.s3-website.ca-central-1.amazonaws.com/"
-      },
-      {
-        "id": 3,
-        "name": "PetBook",
-        "description": "A social app for pet owners to share pet quirks, allergies and commands with other sitters and friends",
-        "url": "https://www.youtube.com/watch?v=S16lQEl88QE&feature=youtu.be"
-      }
-    ],
-    favorites: [
-      {
-        "pets": "Scout & Maya"
-      }
-    ],
+    // favorites: [
+    //   {
+    //     "pets": "Scout & Maya"
+    //   }
+    // ],
     languages: [
       {
         title: "Vanilla Javascript",
@@ -255,12 +235,12 @@ class App extends Component {
       case "skills":
         return <Home langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
       case "projects":
-        return <ProjectList projects={this.state.projects} key={this.key} showView={this.showView} />
+        return <ProjectList key={this.key} showView={this.showView} />
       // case "favs":
       //   return <Favs favs={this.state.favorites} key={this.key} showView={this.showView} />
       case "graphicDesign":
         return <GraphicDesign showView={this.showView}/>
-      case "book":
+      case "home":
         return <Home langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
       default:
         return <Home langs={this.state.languages} me={this.state.me} key={this.key} showView={this.showView} />
